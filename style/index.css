@@ -28,6 +28,10 @@ body {
     background-image: linear-gradient(#252525, #414141);
 }
 
+header {
+    margin-bottom: 10%;
+}
+
 header nav h1 {
     font-size: 5rem;
     color: white;
@@ -39,6 +43,7 @@ header nav h1 {
 header nav{
     width:100%;
     margin-bottom: 3%;
+    margin-top: 3%;
     top:0;
     align-items:center;
     height:10vh;
@@ -85,19 +90,18 @@ header nav a:hover {
   
 }
 
+.top {
+    display:flex;
+  justify-content: center;
+}
+
 .contact-img {
     display:flex;
   justify-content: center;
   align-items:center;
-  
-}
-
-.contact-img img {
-    width: 1000px;
-    height: 500px;
-    position: relative;
-    filter: blur(4px);
-  -webkit-filter: blur(4px);
+  background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80');
+  width: 80%;
+  height: 100vh;
 }
 
 .txt {
@@ -106,7 +110,7 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+    
 }
 
 .txt h2 {
@@ -114,6 +118,7 @@ header nav a:hover {
     font-family: 'Vollkorn', serif;
     font-weight: bolder;
     color: white;
+    
 }
 
 .txt a {
@@ -126,11 +131,13 @@ header nav a:hover {
   text-align: center;
   background-image: linear-gradient(#ff0000, #af0404);
   border-radius: 1rem;
+  
 }
 
 .txt a:hover {
     background-image: linear-gradient(white, darkgray);
     color: black;
+    -webkit-filter: blur(none);
 }
 
 .container {
@@ -194,4 +201,279 @@ footer div a:hover {
     background-image: linear-gradient(white, darkgray);
     color: black;
 }
+
+
+
+.fa {
+    padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3% 50% 3% 49%;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+
+@media(max-width: 800px){
+    header {
+
+        width: 99%;
+        height: 40vh;
+        
+       
+    }
+
+    nav{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+}
+
+    nav div{
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+       
+
+    
+    }
+    .name{
+        width: 100%;
+        margin: 0% 0% 5% 0%;
+        padding: 0%;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .name h1 {
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+    margin: 0% 0% 5% 0%;
+    }
+
+    .links{
+        margin: 0% 0% 5% 0%;
+        width: 100%;
+        padding: 0%;
+    }
+
+
+    .top {
+        width: 100%;
+        height: 20%;
+        margin-bottom: 5%;
+        margin-top: 20%;
+    }
+
+    .top .contact-img {
+        width:80%;
+        height: 50vh;
+        background-size: cover;
+    }
+
+    .top .txt {
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .top .txt h2 {
+        font-size: 4rem;
+        margin-bottom: 5%;
+    }
+
+    .section-two {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .container {
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 99%;
+        
+        margin: 0%;
+        padding: 0%;
+    }
+
+
+    
+    .container .content {
+       
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0% 0% 3% 0%;
+        padding: 0%;
+        width: 45%;
+    }
+    
+    .container img {
+        border: 5px;
+        border: white;
+        border-style: solid;
+        width: 90%;
+        height: 90%;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .content h1 {
+        font-size: 1rem;
+        font-family: 'Vollkorn', serif;
+        margin: 0%;
+        padding: 0%;
+        color: white;
+
+
+}
+}
+/*Phone*/
+@media(max-width: 500px){
+    header {
+
+        width: 99%;
+        height: 40vh;
+        
+       
+    }
+
+    nav{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+}
+
+    nav div{
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+       
+
+    
+    }
+    .name{
+        width: 100%;
+        margin: 0% 0% 5% 0%;
+        padding: 0%;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .name h1 {
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+    margin: 0% 0% 5% 0%;
+    }
+
+    .links{
+        margin: 0% 0% 5% 0%;
+        width: 100%;
+        padding: 0%;
+    }
+
+
+    .top {
+        width: 100%;
+        height: 20%;
+        margin-bottom: 5%;
+        margin-top: 20%;
+    }
+
+    .top .contact-img {
+        width:80%;
+        height: 50vh;
+        background-size: cover;
+    }
+
+    .top .txt {
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .top .txt h2 {
+        font-size: 4rem;
+        margin-bottom: 5%;
+    }
+
+    .section-two {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .container {
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 99%;
+        
+        margin: 0%;
+        padding: 0%;
+    }
+
+
+    
+    .container .content {
+       
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0% 0% 3% 0%;
+        padding: 0%;
+        width: 45%;
+    }
+    
+    .container img {
+        border: 5px;
+        border: white;
+        border-style: solid;
+        width: 90%;
+        height: 90%;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .content h1 {
+        font-size: 1rem;
+        font-family: 'Vollkorn', serif;
+        margin: 0%;
+        padding: 0%;
+        color: white;
 
